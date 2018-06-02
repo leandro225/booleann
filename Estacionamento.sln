@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelos", "Modelos\Modelos.csproj", "{1B0F55DF-9D0A-4B7C-B050-A54F0152B870}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controllers", "Controllers\Controllers.csproj", "{C662A91E-2813-4CF7-AF87-759B5172938C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelasMenu", "TelasMenu\TelasMenu.csproj", "{A0ADD11D-CFAF-4749-A5D7-89BCF382CA96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B0F55DF-9D0A-4B7C-B050-A54F0152B870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B0F55DF-9D0A-4B7C-B050-A54F0152B870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B0F55DF-9D0A-4B7C-B050-A54F0152B870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B0F55DF-9D0A-4B7C-B050-A54F0152B870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C662A91E-2813-4CF7-AF87-759B5172938C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C662A91E-2813-4CF7-AF87-759B5172938C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C662A91E-2813-4CF7-AF87-759B5172938C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C662A91E-2813-4CF7-AF87-759B5172938C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0ADD11D-CFAF-4749-A5D7-89BCF382CA96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0ADD11D-CFAF-4749-A5D7-89BCF382CA96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0ADD11D-CFAF-4749-A5D7-89BCF382CA96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0ADD11D-CFAF-4749-A5D7-89BCF382CA96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB2BB392-1D43-49E0-99E2-B30ECA30BF7F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,36 @@
+﻿<Window x:Class="TelasMenu.CadastroEstacionar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        xmlns:local="clr-namespace:TelasMenu"
+        mc:Ignorable="d"
+        Title="CadastroEstacionar"   Height="593" Width="954" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" BorderBrush="White" Margin="0">
+    <Grid Background="#FF3E3E3E">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="314*"/>
+            <RowDefinition Height="279*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Height="30" Margin="0" VerticalAlignment="Top" Background="#FFCAD314">
+            <Button x:Name="btnFechar" Content="" Width="38" HorizontalAlignment="Right" Foreground="#DDFFFFFF" BorderBrush="{x:Null}" FontSize="10" Click="btnFechar_Click" Margin="0,-4,-5,0" Height="38" VerticalAlignment="Stretch">
+                <Button.Background>
+                    <ImageBrush ImageSource="img/Fechar.png"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+
+        <Label Content="CADASTRAR NOVO VEICULO" HorizontalAlignment="Left" Margin="43,63,0,0" VerticalAlignment="Top" Width="228" Foreground="#DDFDFBFB" FontSize="16" FontFamily="Stencil" Background="{x:Null}"/>
+        <Label Content="Placa:" HorizontalAlignment="Left" Margin="43,137,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold" RenderTransformOrigin="0.717,0.707"/>
+        <Label Content="Modelo:" HorizontalAlignment="Left" Margin="43,162,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold"/>
+        <TextBox x:Name="txtModelo" HorizontalAlignment="Left" Height="30" Margin="126,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Background="{x:Null}" BorderBrush="#FFDFD629" CaretBrush="#FFDFD629" CharacterCasing="Upper" FontWeight="SemiBold" Foreground="White"  BorderThickness="0,0,0,1" SelectionBrush="{x:Null}"/>
+        <Label Content="Cor:" HorizontalAlignment="Left" Margin="43,188,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold" RenderTransformOrigin="0.5,0.813"/>
+        <TextBox x:Name="txtCor" HorizontalAlignment="Left" Height="31" Margin="126,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" BorderBrush="#FFDFD629" CaretBrush="#FFDFD629" CharacterCasing="Upper" FontWeight="SemiBold" Foreground="White"  BorderThickness="0,0,0,1" Background="{x:Null}" SelectionBrush="{x:Null}"/>
+        <Button Content="Salvar" HorizontalAlignment="Left" Margin="43,269,0,0" VerticalAlignment="Top" Width="83" Height="27" Click="btnSalvar_Click" Background="#FFFBFBFB" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="txtPlaca" HorizontalAlignment="Left" Height="25" Margin="126,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Background="{x:Null}" BorderBrush="#FFDFD629" CaretBrush="#FFDFD629" CharacterCasing="Upper" FontWeight="SemiBold" Foreground="White"  BorderThickness="0,0,0,1" SelectionBrush="{x:Null}" IsReadOnly="True"/>
+
+
+
+
+    </Grid>
+</Window>

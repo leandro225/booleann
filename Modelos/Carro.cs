@@ -11,7 +11,8 @@ namespace Modelos
 
     {
 
-        private Boolean estaEstacionado;
+        public bool Status { get; set; }
+
         public int CarroID { get; set; }
 
         public string Placa { get; set; }
@@ -20,7 +21,8 @@ namespace Modelos
 
         public string Cor { get; set; }
 
-        public Boolean EstaEstacionado()
+        /*
+         public Boolean EstaEstacionado()
         {
             return estaEstacionado;
         }
@@ -28,7 +30,7 @@ namespace Modelos
         public void setEstaEstacionado(Boolean estaEstacionado)
         {
             this.estaEstacionado = estaEstacionado;
-        }
+        }*/
     }
-    
+
 }

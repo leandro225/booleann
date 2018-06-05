@@ -52,15 +52,15 @@ namespace Controllers
             Contexto ctx = new Contexto();
             return ctx.Estacionados.ToList();
         }
-        public static List<Entrada> PesquisaCarroPorStatus()
+        public static List<Carro> PesquisaCarroPorStatus()
         {
-            List<Entrada> auxiliar = new List<Entrada>();
+            List<Carro> auxiliar = new List<Carro>();
             Contexto ctx = new Contexto();
-            List<Entrada> lista = ctx.Estacionados.ToList();
+            List<Carro> lista = ctx.Carros.ToList();
 
             foreach (var item in lista)
             {
-                if (item.EstaEstacionado() == true)
+                if (item.Status == true)
                 {
                     auxiliar.Add(item);
 
@@ -69,16 +69,17 @@ namespace Controllers
             return auxiliar;
 
         }
-        public static void darEntradaNoEstacionamento(Entrada entrada)
-        {
-            entrada.setEstaEstacionado(true);
+        /*
+         public static void darEntradaNoEstacionamento(Entrada entrada)
+         {
+             entrada.setEstaEstacionado(true);
 
-        }
+         }
 
-        public static void darSaidaDoEstacionamento(Entrada entrada)
-        {
-            entrada.setEstaEstacionado(false);
-        }
+         public static void darSaidaDoEstacionamento(Entrada entrada)
+         {
+             entrada.setEstaEstacionado(false);
+         }*/
 
     }
 

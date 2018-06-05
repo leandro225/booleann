@@ -47,6 +47,7 @@ namespace TelasMenu
                 novoCarro.Placa = txtPlaca.Text;
                 novoCarro.Modelo = txtModelo.Text;
                 novoCarro.Cor = txtCor.Text;
+                novoCarro.Status = false;
 
                 Controllers.CarrosController.SalvarCarrosCadastrados(novoCarro);
 

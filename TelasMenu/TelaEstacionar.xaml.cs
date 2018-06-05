@@ -102,16 +102,15 @@ namespace TelasMenu
                 novaEntrada.corCarro = (blockCor.Text);
                 novaEntrada.DataEstacionar = DateTime.Now.ToString();
                 
-
+                novaEntrada.carro= Controllers.CarrosController.PesquisaCarroPorPlaca(blockPlaca.Text);
+                novaEntrada.carro.Status = true;
                 Controllers.EstacionarController.SalvarEntrada(novaEntrada);
-                Controllers.EstacionarController.darEntradaNoEstacionamento(novaEntrada);
+                //Controllers.EstacionarController.darEntradaNoEstacionamento(novaEntrada);
 
                 TelaEstacionado novaTela = new TelaEstacionado();
-                if (novaEntrada.EstaEstacionado() == true)
-                {
-                    MessageBox.Show("true", "Atenção", MessageBoxButton.OK);
-                }
+               
                 novaTela.ShowDialog();
+
 
 
                 

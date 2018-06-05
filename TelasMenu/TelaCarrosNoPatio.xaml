@@ -24,8 +24,7 @@
                 <DataGridTextColumn  Binding="{Binding placaCarro}" Header="Placa" Width="90" SortDirection="Ascending"/>
                 <DataGridTextColumn  Binding="{Binding modeloCarro}" Header="Modelo" Width="140" SortDirection="Ascending"/>
                 <DataGridTextColumn  Binding="{Binding corCarro}" Header="Cor" Width="95" SortDirection="Ascending"/>
-                <DataGridTextColumn  Binding="{Binding DataEstacionar}" Header="Hora Entrada" Width="155" SortDirection="Ascending"/>
-                <DataGridTextColumn  Binding="{Binding clienteId}" Header="ID" Width="155" SortDirection="Ascending"/>
+               
             </DataGrid.Columns>
         </DataGrid>
 

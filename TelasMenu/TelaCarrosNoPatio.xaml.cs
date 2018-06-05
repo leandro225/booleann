@@ -22,7 +22,7 @@ namespace TelasMenu
     {
 
         public static List<Carro> novaLista = new List<Carro>();
-        public static List<Entrada> novaLista1 = new List<Entrada>();
+        public static List<Carro> novaLista1 = new List<Carro>();
 
         public TelaCarrosNoPatio()
         {

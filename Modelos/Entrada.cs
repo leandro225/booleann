@@ -10,7 +10,7 @@ namespace Modelos
     {
 
 
-        private Boolean estaEstacionado;
+        public Boolean estaEstacionado { get; set; }
 
         public int entradaId { get; set; }
 
@@ -28,7 +28,8 @@ namespace Modelos
 
         public double Total { get; set; }
 
-        public Boolean EstaEstacionado()
+        /*
+         public Boolean EstaEstacionado()
         {
             return estaEstacionado;
         }
@@ -36,7 +37,7 @@ namespace Modelos
         public void setEstaEstacionado(Boolean estaEstacionado)
         {
             this.estaEstacionado = estaEstacionado;
-        }
+        }*/
 
 
     }

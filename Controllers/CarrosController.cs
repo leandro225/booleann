@@ -22,6 +22,8 @@ namespace Controllers
 
         }
 
+
+
         public static List<Carro> retornaTodosCarros()
         {
             Contexto ctx = new Contexto();
@@ -62,6 +64,29 @@ namespace Controllers
             return null;
 
         }
+        /*
+         public void EstacionarCarro(int id)
+        {
+            Contexto ctx = new Contexto();
+
+            // List<Carro> lista = ctx.Carros.ToList();
+            Carro c = ctx.Carros.Find(id);
+            c.Status = true;
+            ctx.SaveChanges();
+            
+
+        }*/
+        public void LiberarCarro(int id)
+        {
+            Contexto ctx = new Contexto();
+
+            // List<Carro> lista = ctx.Carros.ToList();
+            Carro c = ctx.Carros.Find(id);
+            c.Status = false;
+            ctx.SaveChanges();
+
+
+        }
 
         public static Carro retornaCarroPorId(int id)
         {
@@ -70,7 +95,7 @@ namespace Controllers
             return c;
         }
 
-        public static void darEntradaNoEstacionamento(Carro entrada)
+        /*public static void darEntradaNoEstacionamento(Carro entrada)
         {
             entrada.setEstaEstacionado(true);
 
@@ -80,7 +105,7 @@ namespace Controllers
         {
             entrada.setEstaEstacionado(false);
         }
-
+        */
     }
 
 }
